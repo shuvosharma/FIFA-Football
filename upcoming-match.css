@@ -1,0 +1,310 @@
+:root{
+  --black: #161616;
+  --blue: #5096fa;
+  --white: #fff;
+  --gray: #B9B9B9;
+ }
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ /* --------------------------------------------
+               Top-Header-Section                 
+   -------------------------------------------- */
+   .main_container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .container{
+    width: 90%;
+    height: 80vh;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--black);
+  }
+  .Banner_text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 70px;
+  }
+  .Banner_text > h1{
+    font-family: poppins, sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    line-height: 50px;
+    color: var(--white);
+  }
+  .Banner_text > p{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    letter-spacing: .6px;
+    color: var(--white);
+  }
+  .Banner_text > div > a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .8px;
+    color: var(--blue);
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: 2.5px solid var(--blue);
+    transition: .5s;
+  }
+  .Banner_text > div > a:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2.5px solid var(--blue);
+  }
+
+  /* ---------------------image-------------------------- */
+  .Banner_image{
+    width: 50%;
+    height: 100%;
+  }
+  .Banner_image > img{
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+    /* --------------------------------------------
+            main-content-Section                 
+  -------------------------------------------- */
+
+  .main-container{
+    width: 80%;
+    height: 75vh;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    /* border: 1px solid red; */
+  }
+/* --------------left-side---------------- */
+
+  .left-side{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--black);
+  }
+  .left-side > a{
+    text-decoration: none;
+    display: inline-block;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .4px;
+    height: 45px;
+    width: 220px;
+    text-align: center;
+    
+    border-radius: 10px;
+  }
+  .left-side .white{
+    background-color: var(--white);
+    color: var(--black);
+  }
+  .left-side .red{
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  .right-side{
+    width: 777px;
+    height: 100%;
+    /* border: 1px solid red; */
+  }
+  /* --------------right-side---------------- */
+
+  .right-side{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 210px);
+    grid-gap: 22px;
+    
+  }
+  .right-side .grid-container{
+    border-radius: 10px;
+    border: .5px solid rgb(184, 184, 184);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  /* ------------------img----------------- */
+
+  .top_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  .top_img .vs{
+    margin: 0 8px;
+  }
+  .top_img .vs > h2{
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+  }
+  .top_img .flag{
+    height: 100%;
+    /* border: 1px solid red; */
+  }
+  .top_img .flag > img{
+    height: 100%;
+    width: 100%;
+  }
+
+/* ----------------title---------------- */
+
+.flag_box_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.flag_box_title > h2{
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.flag_box_title > p{
+  font-family: poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+/* --------------------------------------------
+                   footer                 
+  -------------------------------------------- */
+
+  footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--black);
+  }
+  footer > h1{
+    font-family: poppins, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    
+    color: var(--white);
+    /* border: 1px solid red; */
+  }
+  footer hr{
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, .1);
+  }
+  .menu_container{
+    width: 80%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  .menu_container > a{
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .9px;
+    color: var(--gray);
+  }
+  .footer_icon {
+    width: 25%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer_icon > a{
+    font-size: 23px;
+    color: var(--gray);
+    background-color: var(--black);
+    padding: 20px;
+    transition: .5s;
+  }
+  .footer_icon > a:hover{
+    color: var(--blue);
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*==================================================
+                  media-query
+  ================================================== */
+
+
+  @media only screen and (max-width: 576px){
+
+    /* -----------Top-Header-Section----------- */
+      .main-container{
+        height: 1200px;
+      }
+      .container{
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        border-radius: 10px;
+      }
+      .Banner_text{
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+        align-items: center;
+      }
+      .Banner_text > h1{
+        font-size: 2em;
+        font-weight: 600;
+        letter-spacing: .2px;
+        line-height: 35px;
+        margin-bottom: 10px;
+      }
+      .Banner_text > p{
+        font-size: 14px;
+      }
+      .Banner_text > div > a{
+        margin-top: 10px;
+      }
+    }
